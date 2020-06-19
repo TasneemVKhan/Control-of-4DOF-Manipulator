@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimMechanicsImportXML version="1.0" xmlns="urn:mathworks:simmechanics:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="Kunj" on="11/16/19||22:55:28" using="SimMechanics Link Version 4.2" from="Pro/Engineer Creo 4.0 - 2016510"/>
+<ModelUnits mass="lbm" length="in"/>
+<RootAssembly name="BODY" uid="BODY_asm" version="4337">
+<AssemblyFile name="BODY.asm" type="ProEngineer Assembly"/>
+<InstanceTree>
+<Instance name="BASE" grounded="true" uid="40" entityUid="BASE_prt">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>1.9685 0 -1.9685</Translation>
+</Transform>
+</Instance>
+<Instance name="ARM_1" uid="46" entityUid="ARM_1_prt">
+<Transform>
+<Rotation>1 0 0 0 -0.677122 -0.735871 0 0.735871 -0.677122</Rotation>
+<Translation>2.16535 1.4272 -2.66381</Translation>
+</Transform>
+</Instance>
+<Instance name="ARM_2" uid="47" entityUid="ARM_2_prt">
+<Transform>
+<Rotation>1 0 0 0 0.916229 -0.400655 0 0.400655 0.916229</Rotation>
+<Translation>1.9685 1.4272 -2.66381</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Rigid name="Rigid_40_0">
+<InstancePath>
+<Uid>40</Uid>
+</InstancePath>
+</Rigid>
+<Coincident name="Coincident_46_0">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>40</Uid>
+</InstancePath>
+<Position>-11 20 0</Position>
+<Axis>22 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>46</Uid>
+</InstancePath>
+<Position>-2 24 0</Position>
+<Axis>4 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident_46_1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>40</Uid>
+</InstancePath>
+<Position>-7 8 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>46</Uid>
+</InstancePath>
+<Position>-12 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident_47_0">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>46</Uid>
+</InstancePath>
+<Position>-8 0 0</Position>
+<Axis>-4 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>47</Uid>
+</InstancePath>
+<Position>-3 0 0</Position>
+<Axis>6 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident_47_1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>46</Uid>
+</InstancePath>
+<Position>-8 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>47</Uid>
+</InstancePath>
+<Position>-3 0 -5</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="ARM_1" uid="ARM_1_prt" version="529">
+<ModelUnits mass="kg" length="mm"/>
+<PartFile name="ARM_1.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>2.03708e+006</Mass>
+<CenterOfMass>-5.2082 13.2492 0</CenterOfMass>
+<Inertia>1.7061e+008 7.45795e+007 2.25477e+008 0 0 4.55958e+006</Inertia>
+</MassProperties>
+<GeometryFile name="arm_1_prt.stl" type="STL"/>
+</Part>
+<Part name="ARM_2" uid="ARM_2_prt" version="302">
+<ModelUnits mass="kg" length="mm"/>
+<PartFile name="ARM_2.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>1.60779e+006</Mass>
+<CenterOfMass>0 8.20864 0</CenterOfMass>
+<Inertia>1.03858e+008 2.10888e+007 1.00993e+008 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="arm_2_prt.stl" type="STL"/>
+</Part>
+<Part name="BASE" uid="BASE_prt" version="432">
+<ModelUnits mass="kg" length="mm"/>
+<PartFile name="BASE.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>6.51047e+007</Mass>
+<CenterOfMass>0 3.59055 0</CenterOfMass>
+<Inertia>4.73098e+010 9.37184e+010 4.74001e+010 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="base_prt.stl" type="STL"/>
+</Part>
+</Parts>
+</SimMechanicsImportXML>
